@@ -8,14 +8,14 @@ const { InjectManifest } = require("workbox-webpack-plugin");
 
 module.exports = () => {
   return {
-    mode: "development",
+    mode: 'development',
     entry: {
-      main: "./src/js/index.js",
-      install: "./src/js/install.js",
+      main: './src/js/index.js',
+      install: './src/js/install.js',
     },
     output: {
-      filename: "[name].bundle.js",
-      path: path.resolve(__dirname, "dist"),
+      filename: '[name].bundle.js',
+      path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
       new HtmlWebpackPlugin({
