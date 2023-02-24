@@ -49,7 +49,7 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.css$/,
+          test: /\.css$/i,
           use: ["style-loader", "css-loader"],
         },
         {
@@ -59,7 +59,7 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spead', '@babel/transform-runtime']
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
             }
           }
         }
